@@ -12,7 +12,7 @@ const Posts = ({ data }) => {
                 {data?.data?.map((item) => <Post key={item.content.id} post={item} onClick={() => setPostId(item.content.id)} />)}
             </div>
 
-            <Modal open={postId} data={data?.data?.filter((item) => item.content.id === postId)} onClose={() => setPostId(null)} />
+            {postId && <Modal open={postId} data={data?.data?.filter((item) => item.content.id === postId)} onClose={() => setPostId(null)} />}Í
         </div>
     )
 }
