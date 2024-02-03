@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 104px;
+    height: 66px;
+    background-color: #fff;
+}
+
+.header .auth {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+

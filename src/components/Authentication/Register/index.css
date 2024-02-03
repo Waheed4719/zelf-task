@@ -1,0 +1,109 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    width: 551px;
+    padding: 32px 40px;
+}
+
+.form h1 {
+    font-weight: 500;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 48px;
+    width: 100%;
+}
+
+.form .selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e3e4e8;
+    border-radius: 4px;
+    padding: 16px 24px;
+    width: 100%;
+    gap: 12px;
+}
+
+.form .primary-btn {
+    width: 100%;
+    padding: 16px 24px;
+}
+
+.form .text-muted {
+    color: var(--muted);
+}
+
+.form .link {
+    text-decoration: none;
+    color: var(--primary);
+    margin-left: 5px;
+}
+
+.registration {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e3e4e8;
+    background-color: white;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.registration-brand {
+    width: 505px;
+    height: 563px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.registration-brand .blue-background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+.registration .instagram-font {
+    font-size: 44px;
+    line-height: 41.35px;
+}
+
+.registration-brand-text {
+    position: relative;
+    z-index: 1;
+    font-size: 44px;
+    line-height: 41.35px;
+    text-align: right;
+    right: 130px;
+}
+
+.registration-brand-text div:nth-child(-n+2) {
+    color: white;
+    font-weight: 300;   
+}
+
+.registration-brand-text div:nth-last-child(-n+2) {
+    color: var(--instagram);
+    font-weight:700;
+}
+
+
+.registration .shadow-bottom {
+    position: absolute;
+    top: 100%;
+    left:0
+}

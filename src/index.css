@@ -1,13 +1,68 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Outfit",-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
 }
 
+button {
+  cursor: pointer;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(
+      "./assets/fonts/Outfit/Outfit-VariableFont_wght.ttf"
+    )
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('./assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format("woff2");
+  font-weight: 400;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+a{
+  all: unset;
+}
+.outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.outfit-semi-bold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.outfit-bold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+:root {
+  --primary: #3354FF;
+  --muted: #767B8A;
+  --background: #f1f2f3;
+  --instagram: #FFEB80;
+}
+
+* {
+  box-sizing: border-box;
+}
+

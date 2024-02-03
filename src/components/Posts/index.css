@@ -1,0 +1,35 @@
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.posts-container .posts {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.posts .post {
+    border-radius: 8px;
+}
+
+.posts-container h3 {
+    font-size: 16px;
+    font-weight: 600;
+    
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.posts-container h3 span {
+    font-weight: 400;
+    color: var(--muted);
+}
+
+@media only screen and (max-width: 1200px) {
+    .posts-container .posts {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+}

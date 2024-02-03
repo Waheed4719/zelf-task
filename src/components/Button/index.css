@@ -1,0 +1,33 @@
+button a {
+    text-decoration: none;
+}
+
+.primary-btn {
+    background-color: var(--primary);
+    border-radius: 2px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.primary-btn:hover {
+    filter: brightness(1.1);
+}
+
+.secondary-btn {
+    color: var(--primary);  
+    background-color: #fff;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-family: Outfit;
+}
+.btn a {
+    color: white;
+    font-weight: 500;
+    font-family: Outfit;
+}
