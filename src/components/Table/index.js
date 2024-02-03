@@ -4,8 +4,7 @@ import PlaceholderAvatar from '../../assets/images/user-icon.png';
 import SorterIcon from '../../assets/images/sort-icon.png'
 import PlayIcon from '../../assets/images/play-btn.png'
 import { Link } from 'react-router-dom'
-import InstagramIcon from '../../assets/images/instagram-icon.png'
-import TiktokIcon from '../../assets/images/tiktok-icon.png'
+import { getIcon } from '../../utils'
 import { formatNumber } from '../../utils';
 
 const headers = [
@@ -65,17 +64,7 @@ const headers = [
 ]
 
 
-const getIcon = (platform = "instagram") => {
-  switch (platform) {
-    case 'instagram':
-      return InstagramIcon
-    case 'tiktok':
-      return TiktokIcon
-    default:
-      return InstagramIcon
-  }
 
-}
 
 const Table = ({ data }) => {
 
