@@ -9,9 +9,9 @@ const Home = () => {
   const navigate = useNavigate();
   const {isAuthenticated} = useAuth0()
   const { data, loading } = useContentApi()
-    // if(!isAuthenticated) {
-    //   navigate('/registration')
-    // }
+    if(!isAuthenticated) {
+      navigate('/registration')
+    }
   console.log(data, loading)
 
   const videos = data?.data && data?.data.length > 0 ? data.data.filter(item => item.content.content_form === 'VIDEO') : []

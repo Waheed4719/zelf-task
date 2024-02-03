@@ -5,6 +5,7 @@ import Modal from '../Modal'
 
 const Posts = ({ data }) => {
     const [postId, setPostId] = useState(null)
+    console.log('postId', postId)
     return (
         <div className='posts-container'>
             <h3>All Posts <span>( {data.total_contents} posts )</span></h3>
