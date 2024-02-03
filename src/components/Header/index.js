@@ -14,7 +14,7 @@ const Header = () => {
     <header className='header'>
       <div><img src={Logo} /></div>
       <div className='auth'>
-        {isAuthenticated ?
+        {!isAuthenticated ?
           <><SecondaryButton>Sign in</SecondaryButton>
             <PrimaryButton>Join</PrimaryButton>
           </> : <> <img src={UserIcon} /> <PrimaryButton onClick={() => logout()}>Logout</PrimaryButton></>
