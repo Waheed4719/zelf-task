@@ -1,12 +1,17 @@
 import React from 'react'
+import PostDetails from './PostDetails'
 
-const Modal = () => {
+const Modal = (
+    {
+        open, data, onClose
+    }
+) => {
   return (
     <div className="modal">
         <div className='backdrop'></div>
         <div className="modal-content">
-
-                </div>
+            <PostDetails post={data} /> 
+         </div>
     </div>
   )
 }
